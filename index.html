@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Lialy Sahl Hasheesh</title>
+<style>
+  :root{
+    --bg1:#0077b6; --bg2:#00b4d8;
+    --accent: rgba(255,255,255,0.15);
+    --accent-hover: rgba(255,255,255,0.3);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html,body{height:100%}
+  body{
+    font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
+    display:flex;align-items:center;justify-content:center;
+    background:linear-gradient(135deg,var(--bg1),var(--bg2));
+    color:#fff;overflow:hidden;min-height:100vh;
+  }
+
+  .wrap{
+    position:relative;z-index:5;width:100%;max-width:420px;
+    text-align:center;padding:36px 20px 120px;
+  }
+  .profile-pic{
+    width:140px;height:140px;border-radius:50%;object-fit:cover;
+    border:4px solid rgba(255,255,255,0.8);
+    box-shadow:0 8px 30px rgba(0,0,0,0.25);
+    margin:0 auto 18px;display:block;
+  }
+  h1{font-size:20px;margin-bottom:10px}
+  p.bio{margin-bottom:22px;color:rgba(255,255,255,0.9);font-size:14px}
+
+  .links{display:flex;flex-direction:column;gap:12px;align-items:center}
+  .link{
+    display:flex;align-items:center;gap:12px;
+    width:100%;max-width:320px;padding:12px 18px;
+    border-radius:30px;background:var(--accent);color:#fff;
+    text-decoration:none;font-weight:600;
+    transition:transform .18s ease, background .18s ease, box-shadow .18s;
+    backdrop-filter:blur(6px);
+  }
+  .link:hover{transform:translateY(-4px);background:var(--accent-hover);box-shadow:0 12px 30px rgba(0,0,0,0.15)}
+  .icon{width:22px;height:22px;flex:0 0 22px;fill:#fff}
+  .label{flex:1;text-align:center}
+
+  footer.footer{margin-top:28px;color:rgba(255,255,255,0.95);font-size:13px}
+  footer.footer a{color:inherit;text-decoration:underline}
+
+  /* waves */
+  .wave-wrap{position:absolute;bottom:0;left:0;width:100%;height:220px;overflow:hidden;z-index:2;pointer-events:none;}
+  .wave-layer{position:absolute;left:-50%;width:200%;height:220px;bottom:0;}
+  .wave-front{animation:moveWave 8s linear infinite;opacity:.95;}
+  .wave-back{animation:moveWaveBack 14s linear infinite;opacity:.55;transform:translateY(12px);}
+  @keyframes moveWave{0%{transform:translateX(-10%);}100%{transform:translateX(-60%);}}
+  @keyframes moveWaveBack{0%{transform:translateX(-5%);}100%{transform:translateX(-45%);}}
+  .wave-svg{width:100%;height:100%;display:block;}
+
+  @media(max-width:420px){
+    .wrap{padding-bottom:140px}
+    .link{max-width:90%;padding:12px}
+    .profile-pic{width:120px;height:120px}
+  }
+</style>
+</head>
+<body>
+
+  <div class="wrap">
+    <img class="profile-pic" 
+         src="https://ik.imagekit.io/AntonMagdy/lialy-links/ddb48637c1aa7f41268b655e720e6f01~tplv-tiktokx-cropcenter_1080_1080.jpeg?updatedAt=1760737957061" 
+         alt="Lialy profile" />
+    <h1>Lialy Sahl Hasheesh</h1>
+    <p class="bio">Unique beach tent experiences in Sahl Hasheesh 🌅</p>
+
+    <nav class="links">
+      <a class="link" href="https://www.instagram.com/lialy_sahlhasheesh?igsh=MWpoZ3EzOTBxYnBxag%3D%3D&utm_source=qr" target="_blank">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.5A4.5 4.5 0 1 0 16.5 13 4.5 4.5 0 0 0 12 8.5zm5.25-2.75a1.125 1.125 0 1 0 1.125 1.125A1.125 1.125 0 0 0 17.25 5.75z" /></svg>
+        <span class="label">Instagram</span>
+      </a>
+
+      <a class="link" href="https://www.facebook.com/share/1a1G9AzAzv/?mibextid=wwXIfr" target="_blank">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M22 12.07C22 6.48 17.52 2 11.93 2 6.34 2 2 6.48 2 12.07c0 5 3.66 9.13 8.44 9.92v-7.03H8.07V12.07h2.37V9.88c0-2.34 1.4-3.63 3.52-3.63.99 0 2.02.18 2.02.18v2.22h-1.14c-1.12 0-1.46.69-1.46 1.4v1.67h2.49l-.4 2.89h-2.09v7.03C18.34 21.2 22 17.07 22 12.07z" /></svg>
+        <span class="label">Facebook</span>
+      </a>
+
+      <a class="link" href="https://maps.app.goo.gl/yAydFaJmYRVjojdF6?g_st=com.google.maps.preview.copy" target="_blank">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+        <span class="label">Location</span>
+      </a>
+
+      <a class="link" href="https://wa.me/201114759996" target="_blank">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M20.52 3.48A11.9 11.9 0 0 0 12 1C6 1 1 6 1 12a11.9 11.9 0 0 0 2.48 7.52L1 23l3.6-1A11.9 11.9 0 0 0 12 23c6 0 11-5 11-11 0-1.85-.47-3.59-1.48-5.02zM12 19.2c-1.9 0-3.7-.5-5.28-1.4l-.38-.23-2.14.6.6-2.07-.25-.41A8.04 8.04 0 0 1 4 12c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8zm4.3-5.9c-.23-.12-1.36-.67-1.57-.75-.2-.09-.35-.12-.5.12-.15.23-.6.75-.73.9-.13.15-.26.17-.5.06-.24-.11-1.02-.37-1.94-1.2-.72-.63-1.2-1.4-1.34-1.64-.14-.24-.015-.37.11-.49.12-.11.26-.29.38-.44.13-.15.17-.26.26-.43.09-.17.04-.32-.02-.44-.06-.11-.5-1.22-.68-1.66-.18-.44-.36-.38-.5-.38l-.42.01c-.14 0-.36.05-.55.25-.18.2-.68.66-.68 1.61s.7 1.87.8 2.01c.1.14 1.38 2.32 3.34 3.16 1.78.77 2.27.82 2.96.68.69-.14 2.2-.9 2.51-1.77.31-.87.31-1.62.22-1.77-.09-.15-.33-.24-.56-.36z"/></svg>
+        <span class="label">WhatsApp</span>
+      </a>
+
+      <a class="link" href="https://www.tiktok.com/@lialy.sahl.hasheeh?_t=ZS-90d5HC4YtNq&_r=1" target="_blank">
+        <!-- Precise TikTok SVG -->
+        <svg class="icon" viewBox="0 0 256 256"><path d="M236.8 81.3a56.7 56.7 0 0 1-33-10.6 56.8 56.8 0 0 1-23-45.9h-28.2v132.9a32.5 32.5 0 1 1-32.5-32.5 31.8 31.8 0 0 1 6.6.7v-29a62.8 62.8 0 0 0-6.6-.3 61.5 61.5 0 1 0 61.5 61.5v-64.7a85 85 0 0 0 50.7 16.5V81.3z" fill="currentColor"/></svg>
+        <span class="label">TikTok</span>
+      </a>
+    </nav>
+
+    <footer class="footer">
+      <p>© 2025 Anton Magdy Design</p>
+      <p><a href="https://bit.ly/ContactCreator" target="_blank">Contact Creator</a></p>
+    </footer>
+  </div>
+
+  <!-- waves -->
+  <div class="wave-wrap">
+    <div class="wave-layer wave-back" style="opacity:.45;">
+      <svg class="wave-svg" viewBox="0 0 1200 220" preserveAspectRatio="none">
+        <path d="M0,96 C150,160 350,10 600,96 C800,160 1000,80 1200,96 L1200,220 L0,220 Z" fill="rgba(255,255,255,0.12)"></path>
+      </svg>
+    </div>
+    <div class="wave-layer wave-front" style="opacity:.9;">
+      <svg class="wave-svg" viewBox="0 0 1200 220" preserveAspectRatio="none">
+        <path d="M0,64 C200,120 400,0 600,64 C800,128 1000,48 1200,64 L1200,220 L0,220 Z" fill="rgba(255,255,255,0.22)"></path>
+      </svg>
+    </div>
+  </div>
+
+</body>
+</html>
