@@ -76,6 +76,15 @@ body {
   .icon{width:22px;height:22px;flex:0 0 22px;fill:#fff}
   .label{flex:1;text-align:center}
 
+  .link.whatsapp .icon {
+  fill: #ffffff; 
+  transition: fill 0.3s ease;
+}
+
+.link.whatsapp:hover .icon {
+  fill: #25D366; 
+}
+
   footer.footer{margin-top:28px;color:rgba(255,255,255,0.95);font-size:13px}
   footer.footer a{color:inherit;text-decoration:underline}
 
@@ -100,6 +109,10 @@ body {
     .wrap{padding-bottom:140px}
     .link{max-width:90%;padding:12px}
     .profile-pic{width:120px;height:120px}
+		
+
+
+
   }
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -129,10 +142,13 @@ body {
         <span class="label">Location</span>
       </a>
 
-      <a class="link" href="https://wa.me/201114759996" target="_blank">
-        <svg class="icon" viewBox="0 0 24 24"><path d="M20.52 3.48A11.9 11.9 0 0 0 12 1C6 1 1 6 1 12a11.9 11.9 0 0 0 2.48 7.52L1 23l3.6-1A11.9 11.9 0 0 0 12 23c6 0 11-5 11-11 0-1.85-.47-3.59-1.48-5.02zM12 19.2c-1.9 0-3.7-.5-5.28-1.4l-.38-.23-2.14.6.6-2.07-.25-.41A8.04 8.04 0 0 1 4 12c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8zm4.3-5.9c-.23-.12-1.36-.67-1.57-.75-.2-.09-.35-.12-.5.12-.15.23-.6.75-.73.9-.13.15-.26.17-.5.06-.24-.11-1.02-.37-1.94-1.2-.72-.63-1.2-1.4-1.34-1.64-.14-.24-.015-.37.11-.49.12-.11.26-.29.38-.44.13-.15.17-.26.26-.43.09-.17.04-.32-.02-.44-.06-.11-.5-1.22-.68-1.66-.18-.44-.36-.38-.5-.38l-.42.01c-.14 0-.36.05-.55.25-.18.2-.68.66-.68 1.61s.7 1.87.8 2.01c.1.14 1.38 2.32 3.34 3.16 1.78.77 2.27.82 2.96.68.69-.14 2.2-.9 2.51-1.77.31-.87.31-1.62.22-1.77-.09-.15-.33-.24-.56-.36z"/></svg>
-        <span class="label">WhatsApp</span>
-      </a>
+      <a class="link whatsapp" href="https://wa.me/+201114759996" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp icon" viewBox="0 0 16 16">
+    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+  </svg>
+  <span class="label">WhatsApp</span>
+</a>
+
 
       <a class="link" href="https://www.tiktok.com/@lialy.sahl.hasheeh?_t=ZS-90d5HC4YtNq&_r=1" target="_blank">
         <svg class="icon" viewBox="0 0 256 256"><path d="M236.8 81.3a56.7 56.7 0 0 1-33-10.6 56.8 56.8 0 0 1-23-45.9h-28.2v132.9a32.5 32.5 0 1 1-32.5-32.5 31.8 31.8 0 0 1 6.6.7v-29a62.8 62.8 0 0 0-6.6-.3 61.5 61.5 0 1 0 61.5 61.5v-64.7a85 85 0 0 0 50.7 16.5V81.3z" fill="currentColor"/></svg>
@@ -140,17 +156,16 @@ body {
       </a>
     </nav>
 
-    <!-- صف الأيقونات السفلية -->
     <div class="social-icons">
       <a href="https://www.instagram.com/lialy_sahlhasheesh" target="_blank"><i class="fab fa-instagram"></i></a>
       <a href="https://www.facebook.com/share/1a1G9AzAzv" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://wa.me/201114759996" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://wa.me/+201114759996" target="_blank"><i class="fab fa-whatsapp"></i></a>
       <a href="https://www.tiktok.com/@lialy.sahl.hasheeh" target="_blank"><i class="fab fa-tiktok"></i></a>
     </div>
 
     <footer class="footer">
       <p>© 2025 Anton Magdy Design</p>
-      <p><a href="https://bit.ly/ContactCreator" target="_blank">Contact Creator</a></p>
+      <p><a href="https://wa.me/+201281358100" target="_blank">Contact Creator</a></p>
     </footer>
   </div>
 
