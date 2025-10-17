@@ -6,17 +6,25 @@
 <title>Lialy Sahl Hasheesh</title>
 <style>
   :root{
-    --bg1:#0077b6; --bg2:#00b4d8;
     --accent: rgba(255,255,255,0.15);
     --accent-hover: rgba(255,255,255,0.3);
   }
   *{box-sizing:border-box;margin:0;padding:0}
   html,body{height:100%}
+
+  /* خلفية متحركة بتدرج لوني */
   body{
     font-family:"Poppins",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial;
     display:flex;align-items:center;justify-content:center;
-    background:linear-gradient(135deg,var(--bg1),var(--bg2));
     color:#fff;overflow:hidden;min-height:100vh;
+    background: linear-gradient(-45deg, #0077b6, #00b4d8, #90e0ef, #48cae4);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+  }
+  @keyframes gradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
   }
 
   .wrap{
@@ -48,14 +56,22 @@
   footer.footer{margin-top:28px;color:rgba(255,255,255,0.95);font-size:13px}
   footer.footer a{color:inherit;text-decoration:underline}
 
-  /* waves */
-  .wave-wrap{position:absolute;bottom:0;left:0;width:100%;height:220px;overflow:hidden;z-index:2;pointer-events:none;}
-  .wave-layer{position:absolute;left:-50%;width:200%;height:220px;bottom:0;}
-  .wave-front{animation:moveWave 8s linear infinite;opacity:.95;}
-  .wave-back{animation:moveWaveBack 14s linear infinite;opacity:.55;transform:translateY(12px);}
-  @keyframes moveWave{0%{transform:translateX(-10%);}100%{transform:translateX(-60%);}}
-  @keyframes moveWaveBack{0%{transform:translateX(-5%);}100%{transform:translateX(-45%);}}
-  .wave-svg{width:100%;height:100%;display:block;}
+  /* صف الأيقونات السفلية */
+  .social-icons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  .social-icons a {
+    color: white;
+    font-size: 22px;
+    transition: 0.3s;
+  }
+  .social-icons a:hover {
+    transform: scale(1.2);
+    color: #000;
+  }
 
   @media(max-width:420px){
     .wrap{padding-bottom:140px}
@@ -63,6 +79,7 @@
     .profile-pic{width:120px;height:120px}
   }
 </style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
 
@@ -95,30 +112,23 @@
       </a>
 
       <a class="link" href="https://www.tiktok.com/@lialy.sahl.hasheeh?_t=ZS-90d5HC4YtNq&_r=1" target="_blank">
-        <!-- Precise TikTok SVG -->
         <svg class="icon" viewBox="0 0 256 256"><path d="M236.8 81.3a56.7 56.7 0 0 1-33-10.6 56.8 56.8 0 0 1-23-45.9h-28.2v132.9a32.5 32.5 0 1 1-32.5-32.5 31.8 31.8 0 0 1 6.6.7v-29a62.8 62.8 0 0 0-6.6-.3 61.5 61.5 0 1 0 61.5 61.5v-64.7a85 85 0 0 0 50.7 16.5V81.3z" fill="currentColor"/></svg>
         <span class="label">TikTok</span>
       </a>
     </nav>
 
+    <!-- صف الأيقونات السفلية -->
+    <div class="social-icons">
+      <a href="https://www.instagram.com/lialy_sahlhasheesh" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/share/1a1G9AzAzv" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://wa.me/201114759996" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.tiktok.com/@lialy.sahl.hasheeh" target="_blank"><i class="fab fa-tiktok"></i></a>
+    </div>
+
     <footer class="footer">
       <p>© 2025 Anton Magdy Design</p>
       <p><a href="https://bit.ly/ContactCreator" target="_blank">Contact Creator</a></p>
     </footer>
-  </div>
-
-  <!-- waves -->
-  <div class="wave-wrap">
-    <div class="wave-layer wave-back" style="opacity:.45;">
-      <svg class="wave-svg" viewBox="0 0 1200 220" preserveAspectRatio="none">
-        <path d="M0,96 C150,160 350,10 600,96 C800,160 1000,80 1200,96 L1200,220 L0,220 Z" fill="rgba(255,255,255,0.12)"></path>
-      </svg>
-    </div>
-    <div class="wave-layer wave-front" style="opacity:.9;">
-      <svg class="wave-svg" viewBox="0 0 1200 220" preserveAspectRatio="none">
-        <path d="M0,64 C200,120 400,0 600,64 C800,128 1000,48 1200,64 L1200,220 L0,220 Z" fill="rgba(255,255,255,0.22)"></path>
-      </svg>
-    </div>
   </div>
 
 </body>
