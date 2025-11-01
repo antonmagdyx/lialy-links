@@ -4,7 +4,6 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Lialy Sahl Hasheesh</title>
-
 <style>
   :root{
     --accent: rgba(255,255,255,0.15);
@@ -15,26 +14,26 @@
 
 body {
   background: linear-gradient(-45deg,
-    #dba514,
-    #d16ba5,
-    #b26ee5,
-    #6654ff,
-    #4a90e2,
-    #0083b0,
-    #00b4db,
-    #34e89e,
-    #38ef7d,
-    #f7971e,
-    #f5576c,
-    #ec6f66,
-    #fa709a,
-    #a044ff,
-    #6a11cb,
-    #2575fc,
-    #1d2671,
-    #2a5298);
+    #3a1c71,
+    #d76d77,
+    #ffaf7b,
+    #283e51,
+    #485563,
+    #2b5876,
+    #4e4376,
+    #182848,
+    #0f2027,
+    #203a43,
+    #2c5364,
+    #42275a,
+    #734b6d,
+    #bdc3c7,
+    #2c3e50,
+    #000428,
+    #004e92,
+    #3a6186);
   background-size: 1000% 1000%;
-  animation: gradient 20s ease infinite;
+  animation: gradient 25s ease infinite;
   height: 100vh;
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -50,117 +49,30 @@ body {
   100% { background-position: 0% 50%; }
 }
 
-  @keyframes swell {
-    0%, 100% { transform: translate3d(0,-25px,0); }
-    50% { transform: translate3d(0,5px,0); }
+
+  .wrap{
+    position:relative;z-index:5;width:100%;max-width:420px;
+    text-align:center;padding:36px 20px 120px;
   }
-
-/* لو عندك أزرار أو روابط */
-a, button, .link {
-  color: #2c3e50; /* لون داكن يناسب الخلفية */
-  font-weight: 600;
-  text-decoration: none;
-}
-
-a:hover, button:hover, .link:hover {
-  color: #000;
-  text-shadow: 0 0 6px rgba(255, 255, 255, 0.8);
-}
-
-
-
-
-.wrap {
-  position: relative;
-  z-index: 5;
-  width: 100%;
-  max-width: 420px;
-  text-align: center;
-  padding: 36px 20px 120px;
-
-  /* ظهور متأخر ومتدرج */
-  opacity: 0;
-  transform: translateY(200px);
-  animation: wrapFadeUp 3s ease .25s forwards;
-}
-
-@keyframes wrapFadeUp {
-  to { opacity: 1; transform: translateY(0); }
-}
-.profile-pic {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 4px solid rgba(255,255,255,0.8);
-  box-shadow: 0 8px 30px rgba(0,0,0,0.25);
-  margin: 0 auto 18px;
-  display: block;
-  animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-  0%, 100% { transform: translateY(0);  }
-  50% { transform: translateY(-10px); }
-  
-}
-h1 {
-  font-size: 25px;
-  margin-bottom: 10px;
-  font-weight: bold;
-  background: linear-gradient(90deg, #00baa4, #ffcb02, #00baa4);
-  background-size: 400%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: moveGradient 6s linear infinite;
-}
-
-@keyframes moveGradient {
-  0% {
-    background-position: 0% 50%;
+  .profile-pic{
+    width:140px;height:140px;border-radius:50%;object-fit:cover;
+    border:4px solid rgba(255,255,255,0.8);
+    box-shadow:0 8px 30px rgba(0,0,0,0.25);
+    margin:0 auto 18px;display:block;
   }
-  100% {
-    background-position: 100% 50%;
-  }
-}
-  p.bio{margin-bottom:22px;color:rgba(255,255,200,0.9);font-size:14px}
+  h1{font-size:20px;margin-bottom:10px}
+  p.bio{margin-bottom:22px;color:rgba(255,255,255,0.9);font-size:14px}
 
   .links{display:flex;flex-direction:column;gap:12px;align-items:center}
-  .link {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  width: 100%;
-  max-width: 320px;
-  padding: 12px 18px;
-  border-radius: 30px;
-  background: linear-gradient(135deg, #001f3f, #003f5c, #004f6d, #002a38);
-  background-size: 300% 300%;
-  animation: linkGradient 8s ease infinite; /* حركة بسيطة للتدرج */
-  color: #fff;
-  text-decoration: none;
-  font-weight: 600;
-  transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.3s ease;
-  backdrop-filter: blur(6px);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-}
-
-/* تأثير الحركة لتدرج الخلفية */
-@keyframes linkGradient {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
-}
-
-/* عند المرور بالماوس */
-.link:hover {
-  transform: translateY(-4px);
-  background: linear-gradient(135deg, #f8f4e1, #ffffff, #f8f4e1);
-  background-size: 200% 200%;
-  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.4);
-}
-
-}
+  .link{
+    display:flex;align-items:center;gap:12px;
+    width:100%;max-width:320px;padding:12px 18px;
+    border-radius:30px;background:var(--accent);color:#fff;
+    text-decoration:none;font-weight:600;
+    transition:transform .18s ease, background .18s ease, box-shadow .18s;
+    backdrop-filter:blur(6px);
+  }
+  .link:hover{transform:translateY(-4px);background:var(--accent-hover);box-shadow:0 12px 30px rgba(0,0,0,0.15)}
   .icon{width:22px;height:22px;flex:0 0 22px;fill:#fff}
   .label{flex:1;text-align:center}
 
@@ -172,43 +84,6 @@ h1 {
 .link.whatsapp:hover .icon {
   fill: #25D366; 
 }
-
-  .link.Snapchat .icon {
-  fill: #ffffff; 
-  transition: fill 0.3s ease;
-}
-
-.link.Snapchat:hover .icon {
-  fill: #fdcc02; 
-}
-
-  .link.tiktok .icon {
-  fill: #ffffff; 
-  transition: fill 0.3s ease;
-}
-
-.link.tiktok:hover .icon {
-  fill: #000000; 
-}
-
-  .link.instagram .icon {
-  fill: #ffffff; 
-  transition: fill 0.3s ease;
-}
-
-.link.instagram:hover .icon {
-  fill: #ff79d1; 
-}
-
-  .link.Facebook .icon {
-  fill: #ffffff; 
-  transition: fill 0.3s ease;
-}
-
-.link.Facebook:hover .icon {
-  fill: #0b5394; 
-}
-
 
   footer.footer{margin-top:28px;color:rgba(255,255,255,0.95);font-size:13px}
   footer.footer a{color:inherit;text-decoration:underline}
@@ -230,131 +105,65 @@ h1 {
     color: #000;
   }
 
-@media (max-width: 768px) {
-  h1 {
-    font-size: 20px;
-  }
-  .link {
-    width: 85%;
-    font-size: 15px;
-    padding: 10px 14px;
-  }
-  .icon {
-    width: 20px;
-    height: 20px;
-  }
-  .profile-pic {
-    width: 120px;
-    height: 120px;
-  }
-}
-
-@media (max-width: 480px) {
-  h1 {
-    font-size: 18px;
-  }
-  .link {
-    width: 90%;
-    font-size: 14px;
-    padding: 9px 12px;
-  }
-  .icon {
-    width: 18px;
-    height: 18px;
-  }
-  .profile-pic {
-    width: 100px;
-    height: 100px;
-  }
-}
-  
-  .social-icon.snapchat .icon {
-  width: 20px;
-  height: 20px;
-  fill: #fff; /* أبيض افتراضيًا مثل باقي الأيقونات */
-  transition: transform 0.3s ease, fill 0.3s ease, filter 0.3s ease;
-}
-
-.social-icon.snapchat:hover .icon {
-  fill: #fffc00; /* لون سناب شات عند الوقوف */
-  transform: scale(1.2);
-  filter: drop-shadow(0 0 6px #fffc00);
-}
-
-  .icon {
-  width: 24px;
-  height: 24px;
-}
+  @media(max-width:420px){
+    .wrap{padding-bottom:140px}
+    .link{max-width:90%;padding:12px}
+    .profile-pic{width:120px;height:120px}
+		
 
 
+
+  }
 </style>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-<div class="ocean">
-  <div class="wave"></div>
-  <div class="wave"></div>
-</div>
 
   <div class="wrap">
     <img class="profile-pic" 
-         src="https://ik.imagekit.io/AntonMagdy/Profile%20Pictures/Hurghada_PP.jpeg?updatedAt=1761777373752" 
-         alt="Hurghada Activites" />
-    <h1>Hurghada Activites</h1>
-    <p class="bio">Sightseeing Tour Agency</p>
+         src="https://ik.imagekit.io/AntonMagdy/lialy-links/ddb48637c1aa7f41268b655e720e6f01~tplv-tiktokx-cropcenter_1080_1080.jpeg?updatedAt=1760737957061" 
+         alt="Lialy profile" />
+    <h1>Lialy Sahl Hasheesh</h1>
+    <p class="bio">Unique beach tent experiences in Sahl Hasheesh 🌅</p>
 
     <nav class="links">
-      <a class="link instagram" href="https://www.instagram.com/hurghada_.activites?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+      <a class="link" href="https://www.instagram.com/lialy_sahlhasheesh?igsh=MWpoZ3EzOTBxYnBxag%3D%3D&utm_source=qr" target="_blank">
         <svg class="icon" viewBox="0 0 24 24"><path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm5 6.5A4.5 4.5 0 1 0 16.5 13 4.5 4.5 0 0 0 12 8.5zm5.25-2.75a1.125 1.125 0 1 0 1.125 1.125A1.125 1.125 0 0 0 17.25 5.75z" /></svg>
         <span class="label">Instagram</span>
       </a>
 
-      <a class="link Facebook" href="https://www.facebook.com/share/1FUV86xfVn/?mibextid=wwXIfr" target="_blank">
+      <a class="link" href="https://www.facebook.com/share/1a1G9AzAzv/?mibextid=wwXIfr" target="_blank">
         <svg class="icon" viewBox="0 0 24 24"><path d="M22 12.07C22 6.48 17.52 2 11.93 2 6.34 2 2 6.48 2 12.07c0 5 3.66 9.13 8.44 9.92v-7.03H8.07V12.07h2.37V9.88c0-2.34 1.4-3.63 3.52-3.63.99 0 2.02.18 2.02.18v2.22h-1.14c-1.12 0-1.46.69-1.46 1.4v1.67h2.49l-.4 2.89h-2.09v7.03C18.34 21.2 22 17.07 22 12.07z" /></svg>
         <span class="label">Facebook</span>
       </a>
 
-		  <a class="link whatsapp" href="https://wa.me/+201009538648" target="_blank">
-	  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp icon" viewBox="0 0 16 16">
-		<path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-	  </svg>
-	  <span class="label">WhatsApp</span>
-	</a>
-
-		<a class="link whatsapp" href="https://wa.me/+201274980809" target="_blank">
-	  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp icon" viewBox="0 0 16 16">
-		<path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
-	  </svg>
-	  <span class="label">WhatsApp</span>
-	</a>
-
-      <a class="link tiktok" href="https://www.tiktok.com/@hurghada_activities" target="_blank">
-        <svg class="icon" viewBox="0 0 256 256"><path d="M236.8 81.3a56.7 56.7 0 0 1-33-10.6 56.8 56.8 0 0 1-23-45.9h-28.2v132.9a32.5 32.5 0 1 1-32.5-32.5 31.8 31.8 0 0 1 6.6.7v-29a62.8 62.8 0 0 0-6.6-.3 61.5 61.5 0 1 0 61.5 61.5v-64.7a85 85 0 0 0 50.7 16.5V81.3z"/></svg>
-        <span class="label">TikTok</span>
+      <a class="link" href="https://maps.app.goo.gl/yAydFaJmYRVjojdF6?g_st=com.google.maps.preview.copy" target="_blank">
+        <svg class="icon" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+        <span class="label">Location</span>
       </a>
-	        <a class="link Snapchat" href="https://www.snapchat.com/@hurghada_actt?sender_web_id=ddf11f6d-6c21-4ad1-b330-1bdbbf55301f&device_type=desktop&is_copy_url=true" target="_blank">
-      <svg class="icon" viewBox="0 0 36 36" width="24" height="24">
-		<path d="M35.8336 26.7701C35.6786 26.2535 34.9294 25.8918 34.9294 25.8918C34.8623 25.8505 34.7951 25.8195 34.7434 25.7936C33.4983 25.1943 32.3978 24.471 31.473 23.6495C30.7291 22.9882 30.0884 22.2649 29.5769 21.49C28.9518 20.5497 28.6573 19.7592 28.5333 19.3355C28.461 19.0565 28.4765 18.948 28.5333 18.8034C28.585 18.6846 28.7245 18.5657 28.7968 18.5141C29.2153 18.2196 29.8921 17.7804 30.3054 17.5118C30.6619 17.2793 30.9719 17.0778 31.1527 16.9538C31.7365 16.5456 32.1344 16.1323 32.372 15.6828C32.6768 15.1042 32.713 14.4635 32.4753 13.8384C32.155 12.9911 31.3645 12.4848 30.3622 12.4848C30.1401 12.4848 29.9076 12.5106 29.6803 12.5571C29.1068 12.6811 28.5591 12.8878 28.1045 13.0634C28.0735 13.0789 28.0373 13.0531 28.0373 13.0169C28.0838 11.8855 28.1407 10.3665 28.0167 8.9199C27.903 7.61278 27.6343 6.51232 27.1952 5.55135C26.7509 4.58522 26.1826 3.87225 25.7279 3.36076C25.2991 2.86995 24.55 2.14664 23.4133 1.49566C21.8169 0.581195 19.9983 0.116211 18.0092 0.116211C16.0253 0.116211 14.2118 0.581195 12.6102 1.4905C11.4116 2.17764 10.6418 2.95261 10.2905 3.3556C9.84097 3.87225 9.26749 4.58522 8.82317 5.54619C8.38402 6.50715 8.11536 7.60761 8.0017 8.91473C7.8777 10.3614 7.92937 11.7615 7.98103 13.0118C7.98103 13.0479 7.94487 13.0738 7.91387 13.0583C7.45922 12.8826 6.91157 12.6759 6.33809 12.5519C6.11076 12.5003 5.88344 12.4796 5.65611 12.4796C4.65382 12.4796 3.86334 12.9859 3.54302 13.8332C3.30536 14.4635 3.34153 15.099 3.64635 15.6777C3.88401 16.1271 4.28183 16.5405 4.86564 16.9486C5.04647 17.0726 5.35646 17.2741 5.71295 17.5066C6.1211 17.7701 6.77724 18.1937 7.19573 18.4934C7.24739 18.5296 7.42305 18.6639 7.47988 18.8034C7.54188 18.9532 7.55221 19.0617 7.47472 19.3562C7.34555 19.785 7.05107 20.5652 6.43625 21.49C5.92477 22.2649 5.28413 22.9882 4.54015 23.6495C3.61019 24.471 2.50972 25.1943 1.26977 25.7936C1.21294 25.8195 1.14061 25.8556 1.06311 25.9021C0.985611 25.9486 0.319134 26.2793 0.179639 26.7701C-0.0270202 27.4934 0.520627 28.1702 1.08894 28.537C2.00858 29.1312 3.1297 29.4515 3.78068 29.622C3.96151 29.6685 4.12683 29.715 4.27666 29.7615C4.36966 29.7925 4.60215 29.8803 4.70548 30.0095C4.82948 30.1697 4.84498 30.3711 4.89147 30.5985C4.96381 30.9808 5.12397 31.4509 5.59412 31.7764C6.11076 32.1329 6.77208 32.1588 7.60388 32.1898C8.47702 32.2208 9.56198 32.2673 10.8019 32.6754C11.3754 32.8666 11.8972 33.1869 12.5017 33.5589C13.7623 34.3338 15.3329 35.3 18.0143 35.3C20.6958 35.3 22.2767 34.3287 23.5477 33.5537C24.147 33.1869 24.6636 32.8666 25.2268 32.6806C26.4667 32.2724 27.5517 32.2311 28.4248 32.1949C29.2566 32.1639 29.9179 32.1381 30.4346 31.7816C30.9409 31.4354 31.0856 30.9136 31.1527 30.521C31.1889 30.3298 31.2147 30.1542 31.3232 30.0095C31.4162 29.8855 31.6332 29.8028 31.7365 29.7667C31.8915 29.7202 32.0569 29.6737 32.248 29.622C32.899 29.4463 33.7101 29.2449 34.7021 28.6817C35.8749 28.0101 35.9576 27.1783 35.8336 26.7701Z"></path>
-		</svg>
-        <span class="label">Snapchat</span>
+
+      <a class="link whatsapp" href="https://wa.me/+201114759996" target="_blank">
+  <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-whatsapp icon" viewBox="0 0 16 16">
+    <path d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"/>
+  </svg>
+  <span class="label">WhatsApp</span>
+</a>
+
+
+      <a class="link" href="https://www.tiktok.com/@lialy.sahl.hasheeh?_t=ZS-90d5HC4YtNq&_r=1" target="_blank">
+        <svg class="icon" viewBox="0 0 256 256"><path d="M236.8 81.3a56.7 56.7 0 0 1-33-10.6 56.8 56.8 0 0 1-23-45.9h-28.2v132.9a32.5 32.5 0 1 1-32.5-32.5 31.8 31.8 0 0 1 6.6.7v-29a62.8 62.8 0 0 0-6.6-.3 61.5 61.5 0 1 0 61.5 61.5v-64.7a85 85 0 0 0 50.7 16.5V81.3z" fill="currentColor"/></svg>
+        <span class="label">TikTok</span>
       </a>
     </nav>
 
     <div class="social-icons">
-      <a href="https://www.instagram.com/hurghada_.activites?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank"><i class="fab fa-instagram"></i></a>
-      <a href="https://www.facebook.com/share/1FUV86xfVn/?mibextid=wwXIfr" target="_blank"><i class="fab fa-facebook-f"></i></a>
-      <a href="https://wa.me/+201009538648" target="_blank"><i class="fab fa-whatsapp"></i></a>
-	  <a href="https://wa.me/+201274980809" target="_blank"><i class="fab fa-whatsapp"></i></a>
-	  <a href="https://www.tiktok.com/@hurghada_activities" target="_blank"><i class="fab fa-tiktok"></i></a>
-	  <a href="https://www.snapchat.com/add/hurghada_actt" target="_blank" class="social-icon snapchat">
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 36" class="icon">
-    <path fill="currentColor" d="M35.8336 26.7701C35.6786 26.2535 34.9294 25.8918 34.9294 25.8918C34.8623 25.8505 34.7951 25.8195 34.7434 25.7936C33.4983 25.1943 32.3978 24.471 31.473 23.6495C30.7291 22.9882 30.0884 22.2649 29.5769 21.49C28.9518 20.5497 28.6573 19.7592 28.5333 19.3355C28.461 19.0565 28.4765 18.948 28.5333 18.8034C28.585 18.6846 28.7245 18.5657 28.7968 18.5141C29.2153 18.2196 29.8921 17.7804 30.3054 17.5118C30.6619 17.2793 30.9719 17.0778 31.1527 16.9538C31.7365 16.5456 32.1344 16.1323 32.372 15.6828C32.6768 15.1042 32.713 14.4635 32.4753 13.8384C32.155 12.9911 31.3645 12.4848 30.3622 12.4848C30.1401 12.4848 29.9076 12.5106 29.6803 12.5571C29.1068 12.6811 28.5591 12.8878 28.1045 13.0634C28.0735 13.0789 28.0373 13.0531 28.0373 13.0169C28.0838 11.8855 28.1407 10.3665 28.0167 8.9199C27.903 7.61278 27.6343 6.51232 27.1952 5.55135C26.7509 4.58522 26.1826 3.87225 25.7279 3.36076C25.2991 2.86995 24.55 2.14664 23.4133 1.49566C21.8169 0.581195 19.9983 0.116211 18.0092 0.116211C16.0253 0.116211 14.2118 0.581195 12.6102 1.4905C11.4116 2.17764 10.6418 2.95261 10.2905 3.3556C9.84097 3.87225 9.26749 4.58522 8.82317 5.54619C8.38402 6.50715 8.11536 7.60761 8.0017 8.91473C7.8777 10.3614 7.92937 11.7615 7.98103 13.0118C7.98103 13.0479 7.94487 13.0738 7.91387 13.0583C7.45922 12.8826 6.91157 12.6759 6.33809 12.5519C6.11076 12.5003 5.88344 12.4796 5.65611 12.4796C4.65382 12.4796 3.86334 12.9859 3.54302 13.8332C3.30536 14.4635 3.34153 15.099 3.64635 15.6777C3.88401 16.1271 4.28183 16.5405 4.86564 16.9486C5.04647 17.0726 5.35646 17.2741 5.71295 17.5066C6.1211 17.7701 6.77724 18.1937 7.19573 18.4934C7.24739 18.5296 7.42305 18.6639 7.47988 18.8034C7.54188 18.9532 7.55221 19.0617 7.47472 19.3562C7.34555 19.785 7.05107 20.5652 6.43625 21.49C5.92477 22.2649 5.28413 22.9882 4.54015 23.6495C3.61019 24.471 2.50972 25.1943 1.26977 25.7936C1.21294 25.8195 1.14061 25.8556 1.06311 25.9021C0.985611 25.9486 0.319134 26.2793 0.179639 26.7701C-0.0270202 27.4934 0.520627 28.1702 1.08894 28.537C2.00858 29.1312 3.1297 29.4515 3.78068 29.622C3.96151 29.6685 4.12683 29.715 4.27666 29.7615C4.36966 29.7925 4.60215 29.8803 4.70548 30.0095C4.82948 30.1697 4.84498 30.3711 4.89147 30.5985C4.96381 30.9808 5.12397 31.4509 5.59412 31.7764C6.11076 32.1329 6.77208 32.1588 7.60388 32.1898C8.47702 32.2208 9.56198 32.2673 10.8019 32.6754C11.3754 32.8666 11.8972 33.1869 12.5017 33.5589C13.7623 34.3338 15.3329 35.3 18.0143 35.3C20.6958 35.3 22.2767 34.3287 23.5477 33.5537C24.147 33.1869 24.6636 32.8666 25.2268 32.6806C26.4667 32.2724 27.5517 32.2311 28.4248 32.1949C29.2566 32.1639 29.9179 32.1381 30.4346 31.7816C30.9409 31.4354 31.0856 30.9136 31.1527 30.521C31.1889 30.3298 31.2147 30.1542 31.3232 30.0095C31.4162 29.8855 31.6332 29.8028 31.7365 29.7667C31.8915 29.7202 32.0569 29.6737 32.248 29.622C32.899 29.4463 33.7101 29.2449 34.7021 28.6817C35.8749 28.0101 35.9576 27.1783 35.8336 26.7701Z"/>
-  </svg>
-</a>
-
+      <a href="https://www.instagram.com/lialy_sahlhasheesh" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://www.facebook.com/share/1a1G9AzAzv" target="_blank"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://wa.me/+201114759996" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      <a href="https://www.tiktok.com/@lialy.sahl.hasheeh" target="_blank"><i class="fab fa-tiktok"></i></a>
     </div>
 
-    <footer class="page-footer">
+    <footer class="footer">
       <p>© 2025 Anton Design</p>
       <p><a href="https://wa.me/+201281358100" target="_blank">Contact Creator</a></p>
     </footer>
